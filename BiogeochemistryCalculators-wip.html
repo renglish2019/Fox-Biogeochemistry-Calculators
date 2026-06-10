@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<style>
+
+	</style>
+<head>
+<title>Calculators - Fox Biogeochemistry Lab</title>
+<!-- Conductivity to Salinity Calculator built by Rebecca English for the 
+	Fox Biogeochemistry Lab at Florida Tech. Updated 6/10/2026 -->
+</head>
+
+<body bgcolor=#FFFEFA>
+  
+<!-- all the HTML for display -->
+
+<center>
+<div id="top">
+<br>
+<table>
+	<tr>
+		<th><h2>Available Calculators:</h2></th>
+		</tr>
+	<tr><td>
+	<ul>
+		<li><a href="#salinity">Conductivity to Salinity</a></li>
+		<li><a href="#saturation">Dissolved Oxygen Percent Saturation</a></li>
+	</ul></td></tr>
+</table>
+</div>
+<br>
+<hr><!-- inserts separation line -->
+<br>
+<div id="salinity">
+<table bgcolor=#903C39 style="width:100%">
+  <tr style="height:75px">
+    <th><b><font size=+3 color=#FFFFFF> Conductivity to Salinity Calculator </font></b></th>
+	</tr>
+</table>
+<br>
+Enter measured values for conductivity and temperature below:
+<br><br>
+<table border=0 cellpadding=20 cellspacing=0 bgcolor=#F8EDEC>
+	<tr>
+		<th style="width:35%">
+			<center><strong>Conductivity:</strong>								<br>
+				<font size=-1><em>µS/cm</em></font></center>
+			</th>
+
+		<th style="width:35%">
+			<center><strong>Temperature:</strong>								<br>
+				<font size=-1><em>°T</em></font></center>
+			</th>
+		</tr>
+	<tr bgcolor=#FFFFFF>
+		<td>
+			<center><input type="text" id="sal.cond" style="height:50px"></center>
+			</td>
+
+		<td>
+			<center><input type="text" id="sal.temp" style="height:50px"></center>
+			</td>
+		</tr>
+</table>
+
+
+<br>
+<table border=0 cellpadding=20 cellspacing=10 bgcolor=#DFA7A5 style="width:40%">
+	<tr>
+		<th>
+			<center><font size=+2><strong>Salinity:</strong></font>						<br>
+				<font><em>PSU</em></font></center>
+			</th>
+	<tr bgcolor=#FFFFFF>
+		<td>
+			<center>[]</center>
+			</td>
+		</tr>
+</table>
+
+
+<br><br>
+
+<font size=-2><em>Calculated using the Practical Salinity Scale 1978 (PSS-78)</em><br>
+<a href="https://salinometry.com/pss-78">salinometry.com/pss-78</a><br></font>
+</div>
+<br><br>
+<font size=-1><a href="#top">Return to top of page</a></font>
+<br><br>
+<hr><!-- inserts separation line -->
+<br>
+<div id="saturation">
+<table bgcolor=#3B8194 style="width:100%">
+  <tr style="height:75px">
+    <th><b><font size=+3 color=#FFFFFF> Dissolved Oxygen Percent Saturation Calculator </font></b></th>
+	</tr>
+</table>
+<br>
+Enter measured values for oxygen, temperature, and salinity below:
+<br><br>
+<table border=0 cellpadding=20 cellspacing=0 bgcolor=#EDF5F8>
+	<tr>
+		<th style="width:25%">
+			<center><strong>Dissolved Oxygen:</strong>							<br>
+				<font size=-1><em>mg/L</em></font></center>
+			</th>
+
+		<th style="width:25%">
+			<center><strong>Temperature:</strong>								<br>
+				<font size=-1><em>°T</em></font></center>
+			</th>
+
+		<th style="width:25%">
+			<center><strong>Salinity:</strong>								<br>
+				<font size=-1><em>ppt or PSU</em></font></center>
+			</th>
+		</tr>
+
+	<tr bgcolor=#FFFFFF>
+		<td>
+			<center><input type="text" id="sat.DO" style="height:50px"></center>
+			</td>
+
+		<td>
+			<center><input type="text" id="sat.temp" style="height:50px"></center>
+			</td>
+
+		<td>
+			<center><input type="text" id="sat.sal" style="height:50px"></center>
+			</td>
+		</tr>
+</table>
+<br>
+
+<font size=-1><em>Default value for pressure at sea level is 101.325 kPa (1 atm).<br>
+Please do not change this value unless calculating a saturation for an elevation other than sea level.</em></font>
+
+<br><br>
+
+<table border=0 cellpadding=20 cellspacing=0 bgcolor=#EDF5F8>
+	<tr>
+		<th>
+			<center><strong>Pressure:</strong>
+				<br>
+				<font size=-1><em>kPa</em></font></center>
+			</th>
+
+	<tr bgcolor=#FFFFFF>
+		<td>
+			<center><input type="text" id="sat.pres" style="height:50px"></center>
+			</td>
+		</tr>
+</table>
+
+<br><br>
+
+<table border=0 cellpadding=20 cellspacing=10 bgcolor=#A4D5E2 style="width:50%">
+	<tr>
+		<th>
+			<center><font size=+2><b>Solubility:</b></font>
+				<br>
+				<em>mg/L</em></center>
+			</th>
+		<th>
+			<center><font size=+2><b>Saturation:</b></font>
+				<br>
+				<em>%</em></center>
+			</th>
+		</tr>
+	<tr bgcolor=#FFFFFF>
+		<td>
+			<center><font size=+1><b>[]</b></font></center>
+			</td>
+		<td>
+			<center><font size=+1><b>[]</b></font></center>
+			</td>
+		</tr>
+</table>
+
+<br>
+<font size=-2><em>Equations derived from Benson and Krause (1980, 1984)</em></font>
+<br></br>
+<font size=-1><a href="#top">Return to top of page</a></font>
+<br><br>
+<hr>
+<br>
+</div>
+</center>
+</body>
+</html>
